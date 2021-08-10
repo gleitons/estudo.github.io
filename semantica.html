@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <title>Semântica</title>
+    <style>
+        button {
+            background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid green;
+    padding: 5px;
+    transition-duration: 0.3s;
+        }
+        button:hover {
+            background-color: rgb(177, 252, 177);
+        }
+        input, textarea {
+            background-color: rgb(236, 226, 213);
+            margin-bottom: 6px;
+            border-radius: 6px;
+            box-shadow: 3px 5px 5px;
+        }
+    </style>
 </head>
 <body>
     <div><a href="portugues.html"><button class="botao-anterior">< voltar</button></a><a href="index.html"><button>Home</button></a><a href="redacao.html"><button>Próximo ></button></a></div>
@@ -19,5 +37,12 @@
     <ul>
         <li>Onde uma palavra pode assumir vários significados</li>
     </ul>
+    <div class="centralizar"><div><form class="formulario" action="post">
+        <input placeholder="Nome" type="text"><br>
+        <input placeholder="E-mail"type="email" data-error="Digite novemente" name="E-mail" id="email" required><br>
+        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
+        <input type="file" name="arquivo" id="arquivo-xx"><br>
+        <button type="submit">Enviar</button>
+    </form></div></div>
 </body>
 </html>
