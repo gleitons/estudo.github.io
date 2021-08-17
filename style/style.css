@@ -1,6 +1,7 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
+    
 }
 .botao{
     background-color: rgb(81, 12, 145);
@@ -54,4 +55,27 @@ body{
     border-radius: 8px;
     width: 450px;
     margin-bottom: 10px;
+}
+.linhas {
+    border: cornflowerblue solid 1px;
+    margin: 5px;
+    padding: 5px;
+    
+    background-color: white;
+    width: 250px;
+    
+}
+.linhas-color {
+    background-color: 
+    darkblue;
+    color: white;
+   
+}
+.top {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.linhas-fundo {
+    background-color: turquoise;
+    
 }
