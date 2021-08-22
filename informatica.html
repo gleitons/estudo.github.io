@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Informática</title>
+    <link rel="import" href="component.html">
+    <link rel="import" href="js/script.js">
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        function voltar() {
+        window.history.back()
+        
+    }
+    </script>
+</head>
+<body>
+    <script type="text/javascript" src="js/meu-arquivo.js"></script>
+    <div><button onclick="voltar()">< voltar</button><a href="index.html"><button>Home</button></a><a href="nao-procastinar.html"><button>Próximo ></button></a></div>
+    <h1>Aula de informática</h1>
+    <h2>Fluxo de dados</h2>
+    <p>simplex</p>
+    <ul>
+        <li>onde a informação vai somente para um sentido</li>
+    </ul>
+    <p>half-duplex</p>
+    <ul>
+        <li>Onde a informação trafega nos dois sentidos, mas nunca ao mesmo tempo.</li>
+    </ul>
+    <p>Full-duplex</p>
+    <ul>
+        <li>Onde a informação trafega em ambos os lados.</li>
+    </ul>
+    
+    <div class="esquema" style="background-color: yellow; color: blue;">
+        <nav>
+            <ul>
+                <table> <tr><td><img class="linhas" style="padding: 0px; border-radius: 20px; box-shadow: 0px 5px 20px black; margin-left: 20px;" width="200"  src="imagens/logo-concurso-bb-vou-passar.svg" alt="Logo vou passar Banco do Brasil"> <div></div></td>
+                <td>Vou passar nesse concurso do Banco do Brasil, <br> quero dar uma vida digna para a minha familia.</td></tr>
+                </table>
+        
+            </ul>
+        </nav>
+    </div>
+    <h2>Redes</h2>
+    <p>Uma rede é um conjuento de dispoditivos conectados por um link de comunicações</p>
+    <ul>
+        <p>Critérios que desempenho</p>
+        <li>Desempenho</li>
+        <li>Confiabilidade</li>
+        <li>Segurança</li>
+    </ul>
+    <h2>Topologias</h2>
+    <p>Se refere a qual maneira a rede é conectada.</p>
+    <p>Loucuras com tempos de e tipos de barramentos, placa nic, com cabos coaxiais. Half duplex, terá que aguardar a transmissão em silencio. havendo transferencia e sempre toda vez que ocorrer a transmissão.</p>
+    <h3>Questões</h3>
+    <p>barramento.</p>
+    <p>tipos de topologia, todas as maquinas admite colisão. CSMA</p>
+    <h3>Topologia anel</h3>
+    <p>Giratório, maquina a, b, c, d</p>
+    <p>transmissão Boradcast.</p>
+    <p>Topologia estrela, ligado ao hub ou switch de rede.</p>
+    <p>Rede guiada é aquela que possue cabo, a não guiada é a que se propaga pelo ar, por exemplo o Wifi.</p>
+    <p>Inicialmente as redes locais trabalhavam com CSMA/CD famoso Half duplex.</p>
+    <h3>Evolução do padrão ethernet</h3>
+    <p>Onde a ethernet pode ser utilizada</p>
+    <p>Ethernet é a originária. 10base2, 200 metros, atenuação é onde mostra a perda do sinal de acordo vai se propagando para o meio final</p>
+    <p>Fast Ethernet, 100mbps, não importa a base, é fast ethernet, sempre é a velocidade 100.</p>
+    <p>Fasta ethernet não chega a Gbps, hald usa csma/cd, full duples não nusa csma/cd.</p>
+    <p>finalizando as redes duplex.</p>
+    <h2>Redes wireless</h2>
+    <p>Tecnologias mais utilizadas são:</p>
+    <ul>
+        <li>Infravermelho</li>
+        <ul>
+            <li>caracteristicas de curtas distancias</li>
+            <li>Não atravessa os caminhos, por exemplo, se você ficar na frente do infravermelho, perde o sinal.</li>
+        </ul>
+        <li>Rádio</li>
+        <ul>
+            <li>Frequencias de 2.4 ghz</li>
+            <li>Atravessa paredes, é muito dificil transmitir pelo ar.</li>
+        </ul>
+    </ul>
+    <option value="55"></option>
+    <p>Hub faz cascateamento e não segmenta</p>
+    <h3>Boradcast e dominios de colisão</h3>
+    <p>Cada segmento tem dominio de colisão</p>
+</body>
+</html>
