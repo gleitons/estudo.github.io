@@ -12,13 +12,26 @@
     <script>
         function voltar() {
         window.history.back()
+        }
         
-    }
-    </script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
 </head>
 <body>
-    <script type="text/javascript" src="js/meu-arquivo.js"></script>
-    <div><button onclick="voltar()">< voltar</button><a href="index.html"><button>Home</button></a><a href="nao-procastinar.html"><button>Próximo ></button></a></div>
+    <div class="menu"><button onclick="voltar()">< voltar</button><a href="index.html"><button>Home</button></a><a href="nao-procastinar.html"><button>Próximo ></button></a></div>
     <h1>Aula de informática</h1>
     <h2>Fluxo de dados</h2>
     <p>simplex</p>
@@ -88,5 +101,11 @@
     <p>Hub faz cascateamento e não segmenta</p>
     <h3>Boradcast e dominios de colisão</h3>
     <p>Cada segmento tem dominio de colisão</p>
+    <h2>Vantagens do Switch</h2>
+    <p>Full-duplex, autoaprendizado, encaminhamento full-duplex</p>
+    <p>Uma boa pergunta para a autoaprendizado</p>
+    <p>Vantagens e adnubustralçaies. como o switch tem as vantagens e desvantagens.</p>
+    <p>As apresentações de encaminhamento e autoaprendizado e encaminhamento full-duplex.</p>
+    
 </body>
 </html>
