@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/operadores.css">
+    <script>
+        function maioremenor(){
+            var idade=window.prompt('Digite a idade:')
+            window.alert('Vamos calcular se é maior ou menor de 18 anos')
+            idade >= 18 ? document.write(`A idade digitada foi ${idade}, portante ele é de Maior`) : document.write(`A idade digitada foi ${idade}, portante ele é de Menor`)
+
+        }
+        function iniciar(){
+            window.document.write('olá mundo!')
+            
+        }
+    </script>
+    <title>Estudo javaScript</title>
+</head>
+<body id="fundo-estudos">
+    <header style="background-color: rgb(31, 30, 30); color: white;">
+        <script>
+            function voltar(){
+            window.history.back()
+            }
+        </script>
+        <container>
+            
+            <button class="voltar-fixo"  onclick="voltar()"> Voltar</button>
+            <a class="voltar-fixo" href="index.html"><button>Home</button></a>
+        </container>
+        <h1>Operadores Aritméticos</h1>
+        <h2>Estudo de operadores aritméticos</h2>
+        <p>Vamos iniciar o estudo. Inicio:</p>
+        <h2>Operadores relacionais</h2>
+        <p>Operadores relacionais, operador de identidade, identico, false identicos, abre o node e treina, </p>
+        <a href="imagens/operadores.png"><img width="80px" src="imagens/operadores.png" alt="Print Operadores"></a>
+        <p>? = signfica se for verdade ele vai executar essa situação verdadeira.</p>
+        <p>exemplo: <button onclick="maioremenor()">MAIOR ou MENOR</button></p>
+    </header>
+    <main>
+        <h2>Aprendendo a manipular DOM</h2>
+        <p>DOM = Document Object Model - Documento de modelação de Objeto.</p>
+        <p>Arvóre DOM - Raiz window.</p>
+        <p>window <ul>
+            <li>Docaliton</li>
+            <li>Location</li>
+            <li>History</li>
+            <ul>
+                <li>head
+                    <ul>
+                        <li>meta</li>
+                        <li>Title</li>
+                    </ul>
+                </li>
+
+                <li>body
+                    <ul>
+                        <li>h1</li>
+                        <li>p</li>
+                        <li>p</li>
+                        <li>div</li>
+                        <li>strong</li>
+                    </ul>
+                </li>
+            </ul>
+        </ul></p>
+        <h2>Iniciando e manipulando dados em javascript</h2>
+        
+        <div id="mega-sena" >
+            <div class="div-megasena">
+                <div onclick="b_selection()" class="bola-megasena"><p>22</p></div>
+                <div class="bola-megasena"><p>22</p></div>
+                <div class="bola-megasena"><p>15</p></div>
+                <div class="bola-megasena"><p>19</p></div>
+                <div class="bola-megasena"><p>22</p></div>
+                <div class="bola-megasena"><p>22</p></div>
+            </div>
+        </div>
+        <p>Vamos inciar</p>
+        <button onclick="iniciar()">Iniciar função</button>
+        <button>mostrar_resultado</button>
+        
+        <script>
+        window.document.write(window.document.URL)
+        </script>
+        <script>
+            var r_megasena = window.document.getElementById('mega-sena')
+            window.document.write(r_megasena.innerHTML)   
+            function b_selection(){
+            }
+            var bolasnovamente = window.document.querySelector('div#mega-sena')
+            window.document.write(bolasnovamente.innerHTML)
+        </script>
+        <h2>Exercicio Aula 10</h2>
+        <p>Exercicio 003</p>
+        <a href="estudo-javascript-003.html"><button>Acessar >></button></a>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

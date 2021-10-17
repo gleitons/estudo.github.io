@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/operadores.css">
+    <script>
+        function voltar(){
+
+        window.history.back()
+        }
+        function somar(){
+            var dado1 = window.document.querySelector('input#dado01')
+            var dado2 = window.document.querySelector('input#dado02')
+            var n1=Number(dado1.value)
+            var n2=Number(dado2.value)
+            var result=n1 + n2
+            total.innerHTML = `Resultado: ${n1} + ${n2} = <div class="resultado-soma"><strong>${result}</strong></div>`
+
+        }
+    </script>
+    <title>Exercicio 007</title>
+</head>
+<body>
+    <header>
+        <container>
+            
+            <button class="voltar-fixo"  onclick="voltar()"> Voltar</button>
+            <a class="voltar-fixo" href="index.html"><button>Home</button></a>
+        </container>
+    </header>
+    <main>
+        <h1>Somando Valores</h1>
+        <h2>Exercício 007 - Somando Valores</h2>
+
+        <div class="calc-soma">
+            <input type="number" name="" id="dado01"> +
+            <input type="number" name="" id="dado02">
+            <input type="button" value="somar" onclick="somar()">
+            <div id="total">Resultado: </div>
+        </div>
+        <div class="mercadolivre">
+            <h1>MercadoLivre</h1>
+        </div>
+        <a href="mudulo-d/index.html"><button class="btn-proximo"> Módulo D >></button></a>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+body{
+
+    background-color: #a9f0d5;
+}
+header{
+    width: 100%;
+    background-image: linear-gradient(to bottom , green, rgb(1, 32, 1));
+    margin: 0px;
+   
+
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+nav{
+
+}
+a{
+    color: white;
+    text-decoration: none;
+    background-color: green;
+    padding: 5px 5px 0px 5px;
+}
+a:hover{
+    background-color: greenyellow;
+    color: black;
+    box-shadow:  inset rgb(19, 235, 109) 1px 0px 11px 1px;
+}
+main{
+    width: 820px;
+    padding-left: 25%;
+    
+    
+}
+
+footer{
+    margin-bottom: 20px;
+}
+li{
+    background-color: rgb(101, 219, 101);
+}
+#titulo-site{
+    text-align: center;
+}
+#menu{
+    color: white;
+}
+#descricao-site{
+    text-align: center;
+    color: aliceblue;
+    
+}
+.info-site{
+    width: auto;
+    display: flex-box;
+    padding-left: 33%;
+    align-items: center;
+    width: 600px;
+}
+.artigo{
+    padding: 10px;
+
+    background-color: white;
+    
+    
+}
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
+}
+.title-artigo{
+    font-family: idroid, Arial, Helvetica, sans-serif;
+    src: url(fontes/idroid.otf);
+    color: green;
+}
+.sub-titulo{
+    font-family: idroid, Arial, Helvetica, sans-serif;
+    src: url(fontes/idroid.otf);
+    color: green;
+    background-color: rgba(84, 236, 84, 0.349);
+}
+.video{
+    background-color: green;
+    padding-left: 20px;
+    display: none;
+}
+.centralizar-imagem{
+    padding-left: 30%;
+}
+.versao-direita{
+    padding-left: 150px;
+    
+}
+.link-versao{
+    color: rgb(0, 31, 0);
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+.link-versao:hover{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+.aprender-mais{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to bottom,#00a11b 10%, #94fdde 0%);
+    border-radius: 12px 12px 12px 12px;
+    
+}
+.info-android{
+    padding: 20px;
+    background-color: white;
+}
+.pe-autor{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+.pe-autor > p{
+    margin: 0px;
+}

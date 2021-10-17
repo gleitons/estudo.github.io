@@ -1,0 +1,42 @@
+@charset "UTF-8"
+
+@font-face {
+    font-family: Android;
+    src: url(/fontes/idroid.otf) format ('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --fundo-geral-estudos: rgb(44, 44, 44);
+    --cor-0: rgb(206, 252, 206);
+    --cor-1: rgb(118, 187, 118);
+    --cor-2: rgb(63, 212, 63);
+    --cor-3: rgb(3, 75, 3);
+    --cor-4: rgb(1, 80, 1);
+    --cor-5: rgb(0, 65, 14);
+    --fonte-padrao: arial, verdana, Helvetica;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#fundo-estudos{
+    background-color: var(--fundo-geral-estudos);
+    color: var(--cor-0);
+}
+body{
+    background-color: var(--cor-0);
+}
+#cabeca-estudos{
+    background-color: none;
+}
+header{
+    background-color: var(--cor-4);
+}
+header > cabeca-estudos{
+    background-color: none;
+}
+#calculadora{
+   
+}

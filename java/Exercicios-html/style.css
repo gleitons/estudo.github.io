@@ -1,0 +1,76 @@
+
+
+body{
+    font-family: arial;
+    background-color: antiquewhite;
+    
+}
+header{
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+nav{
+    background-color: cadetblue;
+    padding: 5px;
+    box-shadow: 1px 1px 1px;
+}
+main{
+    background-color: coral;
+    color: darkblue;
+}
+aside{
+    color: darkgray;
+}
+
+footer{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    width: 100%;
+    margin: 0px;
+
+}
+footer > p {
+    margin: 0px;
+}
+#bola-mega-sena{
+    display: flexbox;
+    background-color: rgb(5, 143, 28);
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 0px;
+    border-radius: 50%;
+
+}
+#bola-loto-facil{
+    display: flexbox;
+    background-color: rgb(5, 143, 28);
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 0px;
+    border-radius: 50%;
+
+}
+#numero > p{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    padding-top: 15%;
+    font-weight: 800;
+    
+}
+.borda-personalizada{
+    border: 30px solid;
+    padding: 20px;
+    border-image-source: url(b-image.png);
+    border-image-slice: 29s;
+    border-image-repeat: repeat;
+    border-image:
+}

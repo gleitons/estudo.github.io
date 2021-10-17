@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/operadores.css">
+    <title>Exercicio 03 DOM</title>
+    <style>
+        .teste01{
+        background-color: chartreuse; 
+        height: 100px; 
+        width: 100px; 
+        text-align: center; 
+        line-height: 100px; 
+        font-size: 30px; 
+        font-weight: 800;
+        }
+        
+    </style>
+    <script>
+        
+        function voltar(){
+
+            window.history.back()
+        }
+        function clicar(){
+            var clicado = window.document.querySelector('div#d_teste')
+            clicado.innerText ='Clicado'
+            clicado.style.background = 'red'
+            clicado.style.color = 'write'
+
+        }
+        function entrou(){
+            var clicado = window.document.querySelector('div#d_teste')
+            clicado.innerText ='Entrou'
+            
+        }
+        function saiu(){
+            var clicado = window.document.querySelector('div#d_teste')
+            clicado.innerText ='Saiu'
+            clicado.style.background = 'greenyellow'
+            clicado.style.color = 'black'
+        }
+
+    </script>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <container>
+            
+            <button class="voltar-fixo"  onclick="voltar()"> Voltar</button>
+            <a class="voltar-fixo" href="index.html"><button>Home</button></a>
+        </container>
+        <h2>Eventos DOM</h2>
+        <p>Criação de DIVS</p>
+        <div>
+            <div class="teste01" id="d_teste" onclick="clicar()" onmouseover="entrou()" onmouseout="saiu()" > 
+                <div><p>22</p></div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>Exercício seguinte</p>
+        <a href="estudo-javascript-007.html"><button>Proximo exercício >></button></a>
+    </footer>
+</body>
+</html>
