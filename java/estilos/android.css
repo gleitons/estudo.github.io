@@ -1,42 +1,164 @@
-@charset "UTF-8"
+
+@charset "UTF-8";
 
 @font-face {
-    font-family: Android;
-    src: url(/fontes/idroid.otf) format ('opentype');
+    font-family: 'idroid';
+    src: url('/fontes/idroid.otf'); 
     font-weight: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 
 :root{
     --fundo-geral-estudos: rgb(44, 44, 44);
     --cor-0: rgb(206, 252, 206);
     --cor-1: rgb(118, 187, 118);
     --cor-2: rgb(63, 212, 63);
-    --cor-3: rgb(3, 75, 3);
+    --cor-3: rgb(82, 141, 82);
     --cor-4: rgb(1, 80, 1);
-    --cor-5: rgb(0, 65, 14);
+    --cor-5: rgb(0, 37, 8);
     --fonte-padrao: arial, verdana, Helvetica;
-    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-destaque: 'Oswald', sans-serif;
+    --fontandroid: 'idroid', cursive;
 }
+
 *{
     margin: 0px;
     padding: 0px;
+}
+body {
+    background-color: var(--cor-0);
 }
 #fundo-estudos{
     background-color: var(--fundo-geral-estudos);
     color: var(--cor-0);
 }
-body{
-    background-color: var(--cor-0);
+
+nav {
+    background-color: var(--cor-5);
+   
 }
-#cabeca-estudos{
-    background-color: none;
+nav > a {
+    color: white;
+    padding: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    transition-duration: 150ms;
+    
 }
+
+div.video {
+    background-color: var(--cor-5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 58%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+nav > a:hover {
+    background-color: var(--cor-3);
+    color: var(--cor-5);
+    border-radius: 5px;
+    padding-bottom: 0px;
+}
+nav > a:active {
+    box-shadow: inset 1px 2px 1px 1px black;
+    color: var(--cor-5);
+    
+}
+a.externo::after {
+    content: '\00A0\1F517';
+
+
+}
+
 header{
-    background-color: var(--cor-4);
+    background-image: linear-gradient(to top , var(--cor-5),  var(--cor-3));
+    min-height: 150px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Oswald', sans-serif;
+}
+
+header > h1 {
+    font-size: 28px;
+    text-shadow: black 1px;
+}
+header > p {
+    max-width: 600px;
+    margin: auto;
+    padding-top: 10px;
+}
+article > h1, h2 {
+    font-family: var(--fontandroid);
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.521);
+    padding: 20px;
+
+}
+
+main a {
+    background-color: var(--cor-2);
+    padding-right: 5px;
+    text-decoration: none;
+}
+main a:hover {
+    background-color: var(--cor-5);
+    color: white;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.7em;
 }
 header > cabeca-estudos{
     background-color: none;
 }
 #calculadora{
    
+}
+aside{
+    background-color: var(--cor-1);
+    color: rgb(2, 24, 8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.473);
+}
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+aside > h3 {
+    background-color: var(--cor-5);
+    color: white;
+    padding: 10px;
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+footer {
+    background-color: var(--cor-5);
+    color: white;
+}
+.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
 }
